@@ -1,7 +1,7 @@
-# www
+# b
 
 ## Description
-rrr
+b
 
 ## Table of content
 
@@ -17,27 +17,27 @@ rrr
   
 ## Installation
 
-rrr
+b
 
 ## Usage
 
-rrr
+b
 
 ## License  
-MIT License
+GNU General Public License, version 3 (GPLv3)
 
 ## Contributing
 
-If you would like to contribute to this project, please contact me via email: rrr.
+If you would like to contribute to this project, please contact me via email: b.
 
 I will provide you with contribution guidelines.
 
 ## Tests
 
-rrr
+b
 
 ## Questions
-To view my GitHub profile, please click [this link](rrr).
+To view my GitHub profile, please click [this link](b).
 
-If you have any questions, please contact me: rrr.
+If you have any questions, please contact me: b.
 
