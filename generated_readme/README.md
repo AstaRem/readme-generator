@@ -1,7 +1,7 @@
-# b
+# 'Find a Hotel' app
 
 ## Description
-b
+User can search for and find available hotels in their desired city
 
 ## Table of content
 
@@ -17,27 +17,27 @@ b
   
 ## Installation
 
-b
+No installation needed, app works in browser
 
 ## Usage
 
-b
+Enter city name, travel dates and press Search
 
 ## License  
-GNU General Public License, version 3 (GPLv3)
+MIT License
 
 ## Contributing
 
-If you would like to contribute to this project, please contact me via email: b.
+If you would like to contribute to this project, please contact me via email: asta.rem@hotmail.com.
 
 I will provide you with contribution guidelines.
 
 ## Tests
 
-b
+n/a
 
 ## Questions
-To view my GitHub profile, please click [this link](b).
+To view my GitHub profile, please click [this link](https://github.com/AstaRem).
 
-If you have any questions, please contact me: b.
+If you have any questions, please contact me: asta.rem@hotmail.com.
 
