@@ -1,7 +1,7 @@
-# www
+# app
 
 ## Description
-www
+app for knitting calculations
 
 ## Table of content
 
@@ -17,11 +17,11 @@ www
   
 ## Installation
 
-www
+n/a
 
 ## Usage
 
-www
+just open broser and enter your numbers
 
 ## License  
 
@@ -33,16 +33,16 @@ MIT License
 
 ## Contributing
 
-If you would like to contribute to this project, please contact me via email: www.
+If you would like to contribute to this project, please contact me via email: asta@asta.com.
 I will provide you with contribution guidelines.
 
 ## Tests
 
-www
+n/a
 
 ## Questions
-To view my GitHub profile, please click [this link](www).
+To view my GitHub profile, please click [this link](astaRem).
 
-If you have any questions, please contact me: www.
+If you have any questions, please contact me: asta@asta.com.
 
 

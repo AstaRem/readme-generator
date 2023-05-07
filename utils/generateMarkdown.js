@@ -1,6 +1,11 @@
+const fs = require("fs");
+
+
+
 // function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
+function generateMarkdown(answers) {
+  const {title, description, installation, usage, email, tests, github_URL} = answers
+  const content =  `# ${title}
 
 ## Description
 ${description}
@@ -49,6 +54,15 @@ If you have any questions, please contact me: ${email}.
 
 
 `;
+
+fs.writeFile('./generated_readme/README.md', content, err => {
+  if (err) {
+    console.error(err);
+  } else {
+    console.log('File written successfully')
+  }
+});
+
 }
 
 module.exports = generateMarkdown;
