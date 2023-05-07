@@ -1,7 +1,7 @@
-# app
+# www
 
 ## Description
-app for knitting calculations
+www
 
 ## Table of content
 
@@ -17,32 +17,33 @@ app for knitting calculations
   
 ## Installation
 
-n/a
+www
 
 ## Usage
 
-just open broser and enter your numbers
+www
 
 ## License  
-
-GNU General Public License, version 3 (GPLv3)
-Apache License 2.0
-Berkeley Software Distribution (BSD)
 MIT License
+
+
+
+
+
 
 
 ## Contributing
 
-If you would like to contribute to this project, please contact me via email: asta@asta.com.
+If you would like to contribute to this project, please contact me via email: www.
 I will provide you with contribution guidelines.
 
 ## Tests
 
-n/a
+www
 
 ## Questions
-To view my GitHub profile, please click [this link](astaRem).
+To view my GitHub profile, please click [this link](www).
 
-If you have any questions, please contact me: asta@asta.com.
+If you have any questions, please contact me: www.
 
 

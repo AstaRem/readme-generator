@@ -4,7 +4,7 @@ const fs = require("fs");
 
 // function to generate markdown for README
 function generateMarkdown(answers) {
-  const {title, description, installation, usage, email, tests, github_URL} = answers
+  const {title, description, installation, usage, license, email, tests, github_URL} = answers
   const content =  `# ${title}
 
 ## Description
@@ -31,12 +31,7 @@ ${installation}
 ${usage}
 
 ## License  
-
-GNU General Public License, version 3 (GPLv3)
-Apache License 2.0
-Berkeley Software Distribution (BSD)
-MIT License
-
+${license}
 
 ## Contributing
 

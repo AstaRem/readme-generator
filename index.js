@@ -39,7 +39,14 @@ const questions = [
         type: 'input',
         name: 'github_URL',
         message: 'Your GitHub url:',
-      }
+      },
+    {
+    type: 'checkbox',
+    name: 'license',
+    message: 'License:',
+    choices: ['GNU General Public License, version 3 (GPLv3)', 'Apache License 2.0', 'Berkeley Software Distribution (BSD)', 'MIT License' ]
+    }
+
      
 ];
 
