@@ -1,7 +1,5 @@
 const fs = require("fs");
 
-
-
 // function to generate markdown for README
 function generateMarkdown(answers) {
   const {title, description, installation, usage, license, email, tests, github_URL} = answers
@@ -36,6 +34,7 @@ ${license}
 ## Contributing
 
 If you would like to contribute to this project, please contact me via email: ${email}.
+
 I will provide you with contribution guidelines.
 
 ## Tests
@@ -47,10 +46,13 @@ To view my GitHub profile, please click [this link](${github_URL}).
 
 If you have any questions, please contact me: ${email}.
 
-
 `;
+writeToFile('./generated_readme/README.md', content)
 
-fs.writeFile('./generated_readme/README.md', content, err => {
+}
+
+function writeToFile(fileName, content){
+  fs.writeFile(fileName, content, err => {
   if (err) {
     console.error(err);
   } else {

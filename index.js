@@ -1,5 +1,4 @@
 const fs = require("fs");
-const path = require('path'); // do I NEED IT?
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
@@ -50,17 +49,6 @@ const questions = [
      
 ];
 
-// function to write README file
-// function writeToFile(fileName, err => {
-//         if (err) {
-//             console.error(err);
-//         } else {
-//             console.log('File written successfully');
-//         }
-//         fs.writeFile(fileName, generateMarkdown)
-
-//     }
-// )
 // function to initialize program
 function init() {
     inquirer.prompt(questions).then(function(answers){

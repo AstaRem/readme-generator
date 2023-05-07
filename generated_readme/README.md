@@ -1,7 +1,7 @@
-# 'Find a hotel' app
+# www
 
 ## Description
-User can find available hotels in desired area
+rrr
 
 ## Table of content
 
@@ -17,27 +17,27 @@ User can find available hotels in desired area
   
 ## Installation
 
-No installation needed, app works in browser
+rrr
 
 ## Usage
 
-Enter city name, travel dates and press search
+rrr
 
 ## License  
 MIT License
 
 ## Contributing
 
-If you would like to contribute to this project, please contact me via email: asta.rem@hotmail.com.
+If you would like to contribute to this project, please contact me via email: rrr.
+
 I will provide you with contribution guidelines.
 
 ## Tests
 
-n/a
+rrr
 
 ## Questions
-To view my GitHub profile, please click [this link](https://github.com/AstaRem).
+To view my GitHub profile, please click [this link](rrr).
 
-If you have any questions, please contact me: asta.rem@hotmail.com.
-
+If you have any questions, please contact me: rrr.
 
