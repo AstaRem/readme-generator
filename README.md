@@ -3,8 +3,11 @@
 ## Description
 
 Every project on Github requires quality README file. 
-I have created this Node.js application to generate README file from user input.
+I have created this Node.js application to generate README file from user input. 
 This way user can get completed README file in seconds and no sections will be forgotten. 
+
+App runs in terminal.
+
 
 ## Languages/libraries/technologies used
 - Javascript
@@ -18,49 +21,35 @@ Please copy/clone/download this repository to your local machine and install all
 
 ## Usage
 
-    
-    ![modules](images/modules.jpg)
-    
-  
+Here is a [walkthrough video]() which shows the functionality of the application.
 
-Provide instructions and examples for use. Include screenshots as needed.
+Once you installed dependencies, you will see node_modules folder in your repository:
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+![modules](images/node_modules.PNG)
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+Now open terminal window in the repository. Run `node index.js`.
 
-## Credits
+In the terminal you will see questions displayed. Answer question, press enter. The next question will be displayed. Answer all questions one by one. 
 
-List your collaborators, if any, with links to their GitHub profiles.
+![questions](images/question.PNG)
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
+Last question will multiple choice question with multiple options. You can select more that one. 
 
-If you followed tutorials, include links to those here as well.
+![licenses](images/license_choices.PNG)
 
-## License
+Once all questions are answered, press Enter - the new README.md file is created and placed into the "generated_readme" folder.
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
+![new file](images/new_created.PNG)
 
----
+Contents of the new file:
 
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
+![contents](images/file_content.PNG)
 
-## Badges
+When user clicks on the links in the 'Table of contents', they are taken to relevant section.
 
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
+If you will run the program again, the new file will be created and previous information will be overwritten.
 
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-If your project has a lot of features, list them here.
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
 
 ## Tests
 
-Go the extra mile and write tests for your application. Then provide
+n/a
