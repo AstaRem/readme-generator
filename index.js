@@ -74,11 +74,11 @@ const {GPLv3_B, apache2_B, bsd3_B, mit_B } = badges;
 // function to initialize program
 function init() {
     inquirer.prompt(questions).then(function(answers){
-
+      console.log(answers);
       for(let i = 0; i < answers.license.length; i++){
-        console.log(answers);
+        
 
-        switch(lastItem.choices[i]){
+        switch(answers.license[i]){
           case GPLv3:
             console.log(GPLv3_B);
             break;
