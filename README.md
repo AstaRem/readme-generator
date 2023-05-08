@@ -1,50 +1,66 @@
-# www
+# README.md file generator
 
 ## Description
-www
 
-## Table of content
+Every project on Github requires quality README file. 
+I have created this Node.js application to generate README file from user input.
+This way user can get completed README file in seconds and no sections will be forgotten. 
 
-- [www](#www)
-  - [Description](#description)
-  - [Table of content](#table-of-content)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [License](#license)
-  - [Contributing](#contributing)
-  - [Tests](#tests)
-  - [Questions](#questions)
-  
+## Languages/libraries/technologies used
+- Javascript
+- Node.js
+- Inquirer npm package
+
 ## Installation
 
-www
+To view this project you need to install Node.js on your local machine. 
+Please copy/clone/download this repository to your local machine and install all dependencies.
 
 ## Usage
 
-www
+    
+    ![modules](images/modules.jpg)
+    
+  
 
-## License  
+Provide instructions and examples for use. Include screenshots as needed.
 
-GNU General Public License, version 3 (GPLv3)
-Apache License 2.0
-Berkeley Software Distribution (BSD)
-MIT License
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
+    ```md
+    ![alt text](assets/images/screenshot.png)
+    ```
 
+## Credits
 
-## Contributing
+List your collaborators, if any, with links to their GitHub profiles.
 
-If you would like to contribute to this project, please contact me via email: www.
-I will provide you with contribution guidelines.
+If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
+
+If you followed tutorials, include links to those here as well.
+
+## License
+
+The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
+
+---
+
+🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
+
+## Badges
+
+![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
+
+Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
+
+## Features
+
+If your project has a lot of features, list them here.
+
+## How to Contribute
+
+If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
 
 ## Tests
 
-www
-
-## Questions
-To view my GitHub profile, please click [this link](www).
-
-If you have any questions, please contact me: www.
-
-
+Go the extra mile and write tests for your application. Then provide
