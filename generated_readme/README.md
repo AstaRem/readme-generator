@@ -1,9 +1,9 @@
-# a
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+# nam
 
 ## Description
-a
-
-
+name
 
 ## Table of content
 
@@ -19,27 +19,27 @@ a
   
 ## Installation
 
-a
+name
 
 ## Usage
 
-a
+name
 
 ## License  
-GNU General Public License, version 3 (GPLv3),BSD 3-Clause License
+Apache License 2.0,BSD 3-Clause License
 
 ## Contributing
 
-If you would like to contribute to this project, please contact me via email: a.
+If you would like to contribute to this project, please contact me via email: name.
 
 I will provide you with contribution guidelines.
 
 ## Tests
 
-a
+name
 
 ## Questions
-To view my GitHub profile, please click [this link](a).
+To view my GitHub profile, please click [this link](name).
 
-If you have any questions, please contact me: a.
+If you have any questions, please contact me: name.
 

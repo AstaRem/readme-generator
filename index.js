@@ -7,8 +7,6 @@ const GPLv3 = "GNU General Public License, version 3 (GPLv3)";
 const apache2 = "Apache License 2.0";
 const bsd3 = "BSD 3-Clause License";
 const mit = "MIT License";
-// let displayBadge;
-
 
 // array of questions for user
 const questions = [
@@ -67,44 +65,46 @@ mit_B: `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](h
 
 }
 
-const lastItem = questions[questions.length - 1];
 const {GPLv3_B, apache2_B, bsd3_B, mit_B } = badges;
-
-
 
 // function to initialize program
 function init() {
     inquirer.prompt(questions).then(function(answers){
       console.log(answers);
       function generateBadge(answers){    
-        let badgeStr = "";     
+        let badgeArr = [];     
         for(let i = 0; i < answers.license.length; i++){
           if (answers.license[i] == GPLv3){
-            badgeStr += `${GPLv3_B}\n`
+            badgeArr.push(GPLv3_B);
             console.log(GPLv3_B )
-          } else if(answers.license[i] == apache2 ){
-            badgeStr += `${apache2_B}\n`
+          } 
+          if(answers.license[i] == apache2 ){
+            badgeArr.push(apache2_B);
             console.log(apache2_B)
-          } else if(answers.license[i] == bsd3) {
-            badgeStr += `${bsd3_B}\n`
+          } 
+          if(answers.license[i] == bsd3) {
+            badgeArr.push(bsd3_B);
             console.log(bsd3_B)
-          } else if(answers.license[i] == mit){
-            badgeStr += `${mit_B}\n`
+          } 
+          if(answers.license[i] == mit){
+            badgeArr.push(mit_B);
             console.log(mit_B);
           }
-          return badgeStr;
       }
+      console.log(`here is an array:${badgeArr}`);
+      return badgeArr;
+
       }
       
         let generateMarkdown_content = generateMarkdown(answers);
-        let displayBadge = generateBadge(answers);
-
-        writeToFile('./generated_readme/README.md', generateMarkdown_content);
-        writeToFile('./generated_readme/badge.md',displayBadge)
+        let displayBadge = generateBadge(answers).join("\n");
+        let whole_markdown = displayBadge + "\n" + generateMarkdown_content;
+ 
+        writeToFile('./generated_readme/README.md', whole_markdown);
 
     });
-
 }
 
 // function call to initialize program
 init();
+
