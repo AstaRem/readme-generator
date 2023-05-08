@@ -7,6 +7,7 @@ const GPLv3 = "GNU General Public License, version 3 (GPLv3)";
 const apache2 = "Apache License 2.0";
 const bsd3 = "BSD 3-Clause License";
 const mit = "MIT License";
+// let displayBadge;
 
 
 // array of questions for user
@@ -75,29 +76,31 @@ const {GPLv3_B, apache2_B, bsd3_B, mit_B } = badges;
 function init() {
     inquirer.prompt(questions).then(function(answers){
       console.log(answers);
-      for(let i = 0; i < answers.license.length; i++){
-        
-
-        switch(answers.license[i]){
-          case GPLv3:
-            console.log(GPLv3_B);
-            break;
-          case apache2:
-            console.log(apache2_B);
-            break;
-          case bsd3:
-            console.log(bsd3_B);
-            break;
-          case mit:
+      function generateBadge(answers){    
+        let badgeStr = "";     
+        for(let i = 0; i < answers.license.length; i++){
+          if (answers.license[i] == GPLv3){
+            badgeStr += `${GPLv3_B}\n`
+            console.log(GPLv3_B )
+          } else if(answers.license[i] == apache2 ){
+            badgeStr += `${apache2_B}\n`
+            console.log(apache2_B)
+          } else if(answers.license[i] == bsd3) {
+            badgeStr += `${bsd3_B}\n`
+            console.log(bsd3_B)
+          } else if(answers.license[i] == mit){
+            badgeStr += `${mit_B}\n`
             console.log(mit_B);
-            break;
-          default:
-            console.log("Sorry, there are no other options");
-        }
+          }
+          return badgeStr;
+      }
       }
       
         let generateMarkdown_content = generateMarkdown(answers);
-        writeToFile('./generated_readme/README.md', generateMarkdown_content)
+        let displayBadge = generateBadge(answers);
+
+        writeToFile('./generated_readme/README.md', generateMarkdown_content);
+        writeToFile('./generated_readme/badge.md',displayBadge)
 
     });
 
