@@ -2,6 +2,11 @@ const fs = require("fs");
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown.js");
 const writeToFile = require("./utils/writeToFile.js");
+//licenses
+const GPLv3 = "GNU General Public License, version 3 (GPLv3)";
+const apache2 = "Apache License 2.0";
+const bsd3 = "BSD 3-Clause License";
+const mit = "MIT License";
 
 
 // array of questions for user
@@ -45,16 +50,52 @@ const questions = [
     type: 'checkbox',
     name: 'license',
     message: 'License:',
-    choices: ['GNU General Public License, version 3 (GPLv3)', 'Apache License 2.0', 'Berkeley Software Distribution (BSD)', 'MIT License' ]
+    choices: [GPLv3, apache2, bsd3, mit ]
     }
 
-     
 ];
+
+const badges = {
+GPLv3_B: `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`,
+
+apache2_B: `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`,
+
+bsd3_B: `[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)`,
+
+mit_B: `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
+
+}
+
+const lastItem = questions[questions.length - 1];
+const {GPLv3_B, apache2_B, bsd3_B, mit_B } = badges;
+
+
 
 // function to initialize program
 function init() {
     inquirer.prompt(questions).then(function(answers){
+
+      for(let i = 0; i < answers.license.length; i++){
         console.log(answers);
+
+        switch(lastItem.choices[i]){
+          case GPLv3:
+            console.log(GPLv3_B);
+            break;
+          case apache2:
+            console.log(apache2_B);
+            break;
+          case bsd3:
+            console.log(bsd3_B);
+            break;
+          case mit:
+            console.log(mit_B);
+            break;
+          default:
+            console.log("Sorry, there are no other options");
+        }
+      }
+      
         let generateMarkdown_content = generateMarkdown(answers);
         writeToFile('./generated_readme/README.md', generateMarkdown_content)
 

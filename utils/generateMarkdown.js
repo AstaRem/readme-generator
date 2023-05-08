@@ -1,4 +1,3 @@
-
 // function to generate markdown for README
 function generateMarkdown(answers) {
   const {title, description, installation, usage, license, email, tests, github_URL} = answers
@@ -49,6 +48,5 @@ If you have any questions, please contact me: ${email}.
 return content;
 
 }
-
 
 module.exports = generateMarkdown;
